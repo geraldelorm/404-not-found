@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    padding: 50px 50px 50px 20px;
+
+}
+
+header {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 2px 20px;
+}
+h1{
+    font-size: 64px;
+}
+p {
+    font-size: 24px;
+    margin-top: 30px;
+    max-width: 400px;
+    color: gray;
+}
+
+.main{
+    max-width: 600px;
+    margin-left: 50px;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 20px 30px;
+    margin-top: 50px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+footer p{
+    font-size: 15px;
+    color: gray;
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 300px;
+        height: 300px;
+        margin-top: 10px;
+        padding: 0
+    }
+    header {
+        font-size: 10px;
+        margin: 2px 0px;
+    }
+    h1{
+        font-size: 34px;
+        max-width: 250px;
+    }
+    p {
+        font-size: 10px;
+        margin-top: 30px;
+        max-width: 250px;
+        color: gray;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .main{
+
+        margin-left: 0px;
+    }
+    button{
+        color: white;
+        background-color: black;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 50px;
+        font-size: 10px;
+    }
+    footer p{
+        font-size: 10px;
+        color: gray;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 300px) {
+
+    .container{
+        max-width: 250px;
+    }
+    img {
+        width: 250px;
+    }
+}
