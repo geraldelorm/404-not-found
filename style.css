@@ -17,6 +17,10 @@ body {
 
 .container {
     padding: 20px;
+    /*moving footer to bottom*/
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
 }
 
 .content {
