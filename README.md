@@ -33,15 +33,15 @@
 
 ## Overview
 
-![screenshot](https://github.com/geraldelorm/404-not-found/screen.png)
+![screenshot](https://github.com/geraldelorm/404-not-found/blob/main/screen.PNG)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [HTML](https://reactjs.org/)
-- [CSS](https://vuejs.org/)
-- [JAVASCRIPT](https://tailwindcss.com/)
+- [HTML](https://html.org/)
+- [CSS](https://css.org/)
+- [JAVASCRIPT](https://javascript.com/)
 
 ## Features
 
