@@ -1,136 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-*{
-    box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  font-family: 'Space Mono', monospace;
+  margin: 15px;
+  padding: 0;
 }
-
 
 .container {
-    padding: 20px;
-    /*moving footer to bottom*/
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 100px;
-}
-
-img {
-    width: 500px;
-    height: 500px;
-    padding: 50px 50px 50px 20px;
-
-}
-
 header {
-    font-size: 20px;
+  font-size: 1.5rem;
+}
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  width: 50%;
+  animation: move-up 5s ease 0s infinite alternate;
+}
+
+.hero img {
+  width: 100%;
+  padding-right: 100px;
+}
+.main {
+  width: 50%;
+}
+.main h1 {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  text-align: left;
+}
+.main p {
+  width: 52%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+button {
+  border: 0;
+  background-color: black;
+  color: #fff;
+  width: 200px;
+  height: 70px;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p,
+a {
+  color: #bdbdbd;
+}
+footer p a {
+  font-weight: bold;
+}
+
+@keyframes move-up {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    font-size: 1.2rem;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero > img {
+    padding-right: 0px;
+  }
+  .main {
+    width: 100%;
+  }
+  .main h1 {
+    font-size: 2.5rem;
+    font-style: normal;
     font-weight: 700;
-    margin: 2px 20px;
-}
-h1{
-    font-size: 64px;
-}
-p {
-    font-size: 24px;
-    margin-top: 30px;
-    max-width: 400px;
-    color: gray;
-}
+    line-height: 3rem;
+    letter-spacing: -0.035em;
+    text-align: left;
+  }
+  .main p {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: left;
+    margin-bottom: 50px;
+  }
 
-.main{
-    max-width: 600px;
-    margin-left: 50px;
-}
-
-button{
-    color: white;
-    background-color: black;
-    border: none;
-    padding: 20px 30px;
-    margin-top: 50px;
-}
-footer{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-
-}
-
-footer p{
-    font-size: 15px;
-    color: gray;
-}
-footer p a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-@media only screen and (max-width: 600px) {
-    img {
-        width: 300px;
-        height: 300px;
-        margin-top: 10px;
-        padding: 0
+  @keyframes move-up {
+    100% {
+      transform: scale(0.5);
     }
-    header {
-        font-size: 10px;
-        margin: 2px 0px;
-    }
-    h1{
-        font-size: 34px;
-        max-width: 250px;
-    }
-    p {
-        font-size: 10px;
-        margin-top: 30px;
-        max-width: 250px;
-        color: gray;
-    }
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 10px;
-    }
-    .main{
-
-        margin-left: 0px;
-    }
-    button{
-        color: white;
-        background-color: black;
-        border: none;
-        padding: 10px 15px;
-        margin-top: 50px;
-        font-size: 10px;
-    }
-    footer p{
-        font-size: 10px;
-        color: gray;
-        text-align: center;
-    }
-    
-}
-
-@media only screen and (max-width: 300px) {
-
-    .container{
-        max-width: 250px;
-    }
-    img {
-        width: 250px;
-    }
+  }
 }
