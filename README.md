@@ -24,8 +24,7 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
 
@@ -39,9 +38,8 @@
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [HTML](https://html.org/)
-- [CSS](https://css.org/)
-- [JAVASCRIPT](https://javascript.com/)
+- [HTML]
+- [CSS]
 
 ## Features
 
